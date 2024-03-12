@@ -1,3 +1,42 @@
-theme: jekyll-theme-minimal
-title: Veeam Certification Textbook's homepage
-description: Veeam Certification Textbook
+title: Veeam VMCE Certification v12
+description: >-
+  This is the online textbook for the Veeam Certified Engineer (VMCE) Certification, Version 12.
+baseurl: "" # the subpath of your site, e.g., /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: just-the-docs # Change this to your selected theme
+plugins:
+  - jekyll-feed
+
+# Optional: if you're using 'just-the-docs' theme, you can customize its settings
+just_the_docs:
+  search_enabled: true
+  aux_links:
+    "Veeam Official Site": "https://www.veeam.com"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# For themes that support navigation structures, define your navigation
+# This is an example using 'just-the-docs' theme
+nav_order: # Define the order of your navigation
+  - Home
+  - TOC
+  - Scenario Overview
+  - Exam Blueprint/Course Objectives
+  - Modules
+
+# You can define custom collections here. For example, for modules:
+collections:
+  modules:
+    output: true
+    permalink: /:collection/:name/
